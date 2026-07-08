@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Arquitectura y sitios web</title>
+    <meta
+      name="description"
+      content="Arquitectura, sitios web, certificados, portafolios y contacto."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Encabezado">
+      <a class="brand" href="#inicio">Jose Manuel Michel Verni</a>
+      <nav aria-label="Navegacion principal">
+        <a href="#web">Sitios web</a>
+        <a href="#arquitectura">Arquitectura</a>
+        <a href="#perfil">Perfil</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero" aria-label="Presentacion principal">
+        <img
+          class="hero-image"
+          src="hero-arquitectura-web.png"
+          alt="Mesa de trabajo con planos arquitectonicos y computadora con una interfaz web"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Arquitectura + sitios web</p>
+          <h1>Diseno espacios y experiencias digitales.</h1>
+          <p class="hero-copy">
+            Un solo lugar para conocer mi trabajo como arquitecto, ver los
+            sitios web que desarrollo y acceder a mis portafolios.
+          </p>
+          <div class="hero-actions" aria-label="Acciones principales">
+            <a class="button primary" href="#arquitectura">Arquitectura</a>
+            <a class="button secondary" href="#web">Sitios web</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="duo" aria-label="Arquitectura y sitios web">
+        <article id="web" class="panel web-panel">
+          <div class="panel-header">
+            <p class="eyebrow">Desarrollo web</p>
+            <h2>Sitios web simples, claros y bien presentados.</h2>
+            <p>
+              Este espacio muestra mi formacion, certificados y los sitios que
+              vaya creando para profesionales, marcas personales y proyectos
+              creativos.
+            </p>
+          </div>
+
+          <div class="block">
+            <div class="block-title">
+              <span>01</span>
+              <h3>Certificados</h3>
+            </div>
+            <div class="mini-grid">
+              <div class="mini-card">
+                <p class="status">Por agregar</p>
+                <strong>Curso de desarrollo web</strong>
+                <small>Plataforma o institucion</small>
+              </div>
+              <div class="mini-card">
+                <p class="status">Por agregar</p>
+                <strong>Diseno UI / UX</strong>
+                <small>Plataforma o institucion</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="block-title">
+              <span>02</span>
+              <h3>Sitios creados</h3>
+            </div>
+            <div class="site-list">
+              <a href="#" class="site-item">
+                <span>Primer sitio web</span>
+                <small>Disponible proximamente</small>
+              </a>
+              <a href="#" class="site-item">
+                <span>Landing page de muestra</span>
+                <small>Disponible proximamente</small>
+              </a>
+              <a href="#" class="site-item add">
+                <span>Agregar nuevo proyecto</span>
+                <small>Nombre, enlace y captura</small>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article id="arquitectura" class="panel architecture-panel">
+          <div class="panel-header">
+            <p class="eyebrow">Arquitectura</p>
+            <h2>Portafolio, contacto y recursos de arquitectura.</h2>
+            <p>
+              Escanea los codigos para ir directo al sitio, Instagram o
+              WhatsApp. Abajo puedes entrar al sitio web y descargar los
+              portafolios de estilos 2026.
+            </p>
+          </div>
+
+          <div class="qr-grid" aria-label="Codigos QR">
+            <a class="qr-card" href="https://michelarquitectos.github.io/michel-arquitectos/" target="_blank" rel="noreferrer">
+              <span class="qr-placeholder" aria-hidden="true"></span>
+              <strong>Sitio web</strong>
+              <small>Arquitectura</small>
+            </a>
+            <a class="qr-card" href="https://www.instagram.com/chema.michel.verni/" target="_blank" rel="noreferrer">
+              <span class="qr-placeholder" aria-hidden="true"></span>
+              <strong>Instagram</strong>
+              <small>@chema.michel.verni</small>
+            </a>
+            <a class="qr-card" href="https://wa.me/528713619331" target="_blank" rel="noreferrer">
+              <span class="qr-placeholder" aria-hidden="true"></span>
+              <strong>WhatsApp</strong>
+              <small>Mensaje directo</small>
+            </a>
+          </div>
+
+          <div class="site-preview">
+            <div class="preview-image">
+              <img
+                src="hero-arquitectura-web.png"
+                alt="Vista previa del sitio web de arquitectura"
+              />
+            </div>
+            <div class="preview-copy">
+              <p class="eyebrow">Sitio principal</p>
+              <h3>Conoce mi trabajo de arquitectura</h3>
+              <p>
+                Revisa proyectos, procesos y formas de contacto desde el
+                portafolio principal.
+              </p>
+              <a class="button primary" href="https://michelarquitectos.github.io/michel-arquitectos/" target="_blank" rel="noreferrer">
+                Ir al sitio web
+              </a>
+            </div>
+          </div>
+
+          <a class="download-link" href="#" aria-label="Descargar portafolios de estilos 2026">
+            <span>Ve y descarga gratis nuestros portafolios de estilos del 2026</span>
+            <strong>Descargar</strong>
+          </a>
+        </article>
+      </section>
+
+      <section id="perfil" class="profile-section" aria-label="Perfil de Jose Manuel Michel Verni">
+        <div class="profile-photo">
+          <img
+            src="jose-manuel-michel-verni.png"
+            alt="Retrato de Jose Manuel Michel Verni"
+          />
+        </div>
+        <div class="profile-copy">
+          <p class="eyebrow">Sobre mi</p>
+          <h2>Jose Manuel Michel Verni</h2>
+          <p>
+            Arquitecto y desarrollador de sitios web. Me interesa crear
+            presentaciones claras, visuales y funcionales para proyectos que
+            necesitan verse profesionales desde el primer contacto.
+          </p>
+          <div class="profile-tags" aria-label="Especialidades">
+            <span>Arquitectura</span>
+            <span>Sitios web</span>
+            <span>Portafolios</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact-section" aria-label="Formulario de contacto">
+        <div class="contact-copy">
+          <p class="eyebrow">Contacto</p>
+          <h2>Cuéntame qué necesitas.</h2>
+          <p>
+            Deja tu nombre, correo y una idea breve de lo que buscas. Puede ser
+            un proyecto de arquitectura, un sitio web o una colaboración.
+          </p>
+        </div>
+
+        <form class="contact-form" action="mailto:jm.michelverni@gmail.com" method="post" enctype="text/plain">
+          <label>
+            Nombre
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+          </label>
+          <label>
+            Correo
+            <input type="email" name="correo" placeholder="tu@correo.com" required />
+          </label>
+          <label>
+            ¿Qué requieres?
+            <textarea
+              name="mensaje"
+              rows="5"
+              placeholder="Cuéntame sobre tu proyecto..."
+              required
+            ></textarea>
+          </label>
+          <button class="button primary" type="submit">Enviar mensaje</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
