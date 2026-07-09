@@ -102,8 +102,8 @@ nav a {
   position: absolute;
   z-index: 2;
   right: clamp(20px, 7vw, 96px);
-  bottom: clamp(42px, 8vw, 96px);
-  width: clamp(170px, 22vw, 310px);
+  bottom: clamp(74px, 10vw, 132px);
+  width: clamp(145px, 18.7vw, 264px);
   display: grid;
   gap: 12px;
   justify-items: center;
