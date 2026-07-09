@@ -181,11 +181,42 @@ p {
   line-height: 1.7;
 }
 
-.hero-copy {
-  max-width: 670px;
-  margin: 22px 0 0;
-  color: rgba(255, 255, 255, 0.86);
-  font-size: clamp(1rem, 2vw, 1.18rem);
+.hero-quotes {
+  max-width: 720px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.hero-quotes blockquote {
+  display: grid;
+  align-content: space-between;
+  min-height: 150px;
+  margin: 0;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(21, 26, 27, 0.36);
+  backdrop-filter: blur(10px);
+}
+
+.hero-quotes p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1.02rem, 1.55vw, 1.32rem);
+  font-weight: 500;
+  line-height: 1.28;
+}
+
+.hero-quotes cite {
+  margin-top: 14px;
+  color: var(--gold);
+  font-size: 0.76rem;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .hero-actions {
@@ -671,8 +702,17 @@ p {
 
   .mini-grid,
   .certificate-gallery,
-  .qr-grid {
+  .qr-grid,
+  .hero-quotes {
     grid-template-columns: 1fr;
+  }
+
+  .hero-quotes {
+    max-width: 100%;
+  }
+
+  .hero-quotes blockquote {
+    min-height: auto;
   }
 
   .site-item,
