@@ -276,14 +276,14 @@
           </p>
         </div>
 
-        <form class="contact-form" action="mailto:jm.michelverni@gmail.com" method="post" enctype="text/plain">
+        <form class="contact-form" action="https://formspree.io/f/xeebyeej" method="post">
           <label>
             Nombre
             <input type="text" name="nombre" placeholder="Tu nombre" required />
           </label>
           <label>
             Correo
-            <input type="email" name="correo" placeholder="tu@correo.com" required />
+            <input type="email" name="email" placeholder="tu@correo.com" required />
           </label>
           <label>
             ¿Qué requieres?
@@ -294,6 +294,7 @@
               required
             ></textarea>
           </label>
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde el sitio web" />
           <button class="button primary" type="submit">Enviar mensaje</button>
         </form>
       </section>
