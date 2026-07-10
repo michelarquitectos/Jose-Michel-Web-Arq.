@@ -155,7 +155,7 @@ p,
 strong,
 span,
 small {
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 h1 {
@@ -310,7 +310,6 @@ p {
 .offer-card,
 .linkedin-link,
 .site-preview,
-.architecture-feature,
 .render-card,
 .library-card,
 .download-link {
@@ -423,28 +422,22 @@ p {
 }
 
 .architecture-contact {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(150px, 0.82fr);
-  gap: 14px;
-  align-items: stretch;
   margin-bottom: 20px;
 }
 
 .qr-grid {
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 14px;
 }
 
 .qr-card {
   display: grid;
-  grid-template-columns: minmax(118px, 144px) minmax(0, 1fr);
-  justify-items: start;
-  align-items: center;
-  align-content: center;
-  column-gap: 14px;
-  min-height: 148px;
-  padding: 18px 12px;
-  text-align: left;
+  grid-template-columns: minmax(150px, 0.82fr) minmax(0, 1.18fr);
+  gap: 14px;
+  align-items: stretch;
+  min-height: 220px;
+  padding: 14px;
+  text-align: center;
   transition:
     border-color 180ms ease,
     box-shadow 180ms ease,
@@ -457,9 +450,16 @@ p {
   transform: translateY(-2px);
 }
 
+.qr-content {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 8px;
+  min-width: 0;
+}
+
 .qr-image {
-  grid-row: 1 / span 2;
-  width: min(144px, 100%);
+  width: min(168px, 100%);
   aspect-ratio: 1;
   object-fit: contain;
   border: 8px solid #fff;
@@ -468,36 +468,54 @@ p {
   box-shadow: 0 0 0 1px var(--line);
 }
 
-.qr-card strong,
-.qr-card small {
-  grid-column: 2;
+.qr-card strong {
+  line-height: 1.15;
 }
 
-.architecture-feature {
-  min-height: 464px;
+.qr-card small {
+  line-height: 1.3;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+.qr-reference {
+  min-height: 100%;
   display: grid;
-  align-content: end;
-  gap: 8px;
-  padding: 18px;
+  place-items: end start;
+  padding: 16px;
+  border-radius: 6px;
   color: #fff;
   background:
-    linear-gradient(180deg, rgba(21, 26, 27, 0.14), rgba(21, 26, 27, 0.76)),
+    linear-gradient(180deg, rgba(21, 26, 27, 0.04), rgba(21, 26, 27, 0.72)),
     url("coleccion-estilos-2026.png") center / cover;
   overflow: hidden;
 }
 
-.architecture-feature span,
+.qr-card:nth-child(1) .qr-reference {
+  background:
+    linear-gradient(180deg, rgba(21, 26, 27, 0.04), rgba(21, 26, 27, 0.72)),
+    url("coleccion-estilos-2026.png") 82% 18% / 280% auto;
+}
+
+.qr-card:nth-child(2) .qr-reference {
+  background:
+    linear-gradient(180deg, rgba(21, 26, 27, 0.04), rgba(21, 26, 27, 0.72)),
+    url("coleccion-estilos-2026.png") 66% 52% / 260% auto;
+}
+
+.qr-card:nth-child(3) .qr-reference {
+  background:
+    linear-gradient(180deg, rgba(21, 26, 27, 0.04), rgba(21, 26, 27, 0.72)),
+    url("coleccion-estilos-2026.png") 14% 84% / 260% auto;
+}
+
+.qr-reference span,
 .render-card span,
 .library-card span {
   color: var(--gold);
   font-size: 0.74rem;
   font-weight: 800;
   text-transform: uppercase;
-}
-
-.architecture-feature strong {
-  font-size: 1.34rem;
-  line-height: 1.08;
 }
 
 .site-preview {
@@ -815,14 +833,9 @@ p {
   .mini-grid,
   .certificate-gallery,
   .qr-grid,
-  .architecture-contact,
   .render-section,
   .hero-quotes {
     grid-template-columns: 1fr;
-  }
-
-  .architecture-feature {
-    min-height: 230px;
   }
 
   .hero-quotes {
@@ -853,10 +866,8 @@ p {
     text-align: center;
   }
 
-  .qr-image,
-  .qr-card strong,
-  .qr-card small {
-    grid-column: auto;
-    grid-row: auto;
+  .qr-reference {
+    width: 100%;
+    min-height: 180px;
   }
 }
