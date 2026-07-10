@@ -42,7 +42,7 @@ GitHub te dara una liga similar a:
 
 - `Jose Manuel Michel Verni`
 - `https://michelarquitectos.github.io/michel-arquitectos/`
-- `https://www.instagram.com/chema.michel.verni/`
+- `https://www.instagram.com/michel.arquitectos/`
 - `https://wa.me/528713619331`
 - `jm.michelverni@gmail.com`
 - Certificados
